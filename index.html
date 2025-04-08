@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Color Palette Generator</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+        </style>
+    </head>
+    <body>
+        <div id="icon" class="inconsolata-palette">♡</div>
+        <div id="line"></div>
+        <div id="color-box">
+            <h1 id="heading" class="pangolin-regular">Color Palette Generator</h1>
+            <p id="subtitle" class="inconsolata-palette">Enter a hex code below to generate a color palette.</p>
+            <form id="color-form">
+                <label for="hex-code">Hex Code:</label>
+                <input 
+                    type="text"
+                    id="hex-code"
+                    name="hex-code"
+                    placeholder="#93E9BE"
+                    maxlength="7"
+                    required
+                    pattern="#[0-9A-Fa-f]{6}"
+                />
+                <button type="submit" id="submit" class="inconsolata-palette">Generate Palette</button>
+            </form>
+            <div id="palette"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
