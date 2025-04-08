@@ -1,0 +1,1 @@
+Hello! This is a simple color palette generator built using HTML, CSS and vanilla JavaScript with an added heart trail animation upon mouse movement.
