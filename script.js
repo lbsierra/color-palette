@@ -8,7 +8,7 @@ function createHeartTrail(colors) {
         heart.style.width = "15px";
         heart.style.height = "15px";
         heart.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-        heart.style.clipPath = "polygon(50% 0%, 61% 18%, 81% 18%, 100% 39%, 100% 61%, 81% 81%, 50% 100%, 18% 81%, 0% 61%, 0% 39%, 18% 18%, 39% 18%)";
+        heart.className = "heart";
         heart.style.opacity = "1";
         heart.style.pointerEvents = "none";
 
